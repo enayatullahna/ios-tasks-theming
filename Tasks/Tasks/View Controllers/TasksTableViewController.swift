@@ -38,8 +38,8 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
     
     private func style(cell: UITableViewCell) {
         
-        cell.textLabel?.font = ApperanceHelper.typerighterFont(with: .caption1, pointSize: 30)
-        cell.detailTextLabel?.font = ApperanceHelper.typerighterFont(with: .caption2, pointSize: 25)
+        cell.textLabel?.font = ApperanceHelper.typerighterFont(with: .caption1, pointSize: 25)
+        cell.detailTextLabel?.font = ApperanceHelper.typerighterFont(with: .caption2, pointSize: 20)
         
         cell.textLabel?.backgroundColor = .clear
         cell.detailTextLabel?.backgroundColor = .clear
@@ -47,14 +47,15 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
         cell.textLabel?.textColor = ApperanceHelper.midPurple
         cell.textLabel?.textColor = ApperanceHelper.midPurple
         
-        cell.backgroundColor = .lightGray
+        cell.backgroundColor = ApperanceHelper.replaceLightgray
     
     }
     
     private func setupApperances() {
-        self.view.backgroundColor = .lightGray
+        self.view.backgroundColor = ApperanceHelper.replaceLightgray
         self.tableView.backgroundColor = ApperanceHelper.lightLightGray
-        self.tableView.tableHeaderView?.backgroundColor = .lightGray
+        self.tableView.tableHeaderView?.backgroundColor = ApperanceHelper.replaceLightgray
+        
     
     }
     

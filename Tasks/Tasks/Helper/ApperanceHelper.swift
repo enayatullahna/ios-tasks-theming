@@ -10,10 +10,12 @@ import UIKit
 
 enum ApperanceHelper {
     
-    static var midPurple = UIColor(red: 154.0/255.0, green: 120.0/255.0, blue: 255.0/255.0, alpha: 1.0)
-    static var backgroundGray = UIColor(red: 77.0/255.0, green: 77.0/255.0, blue: 77.0/255.0, alpha: 1.0)
-    static var lightPurple = UIColor(red: 202.0/255.0, green: 172.0/255.0, blue: 249.0/255.0, alpha: 1.0)
-    static var lightLightGray = UIColor(red: 191.0/255.0, green: 191.0/255.0, blue: 191.0/255.0, alpha: 1.0)
+    static var midPurple = UIColor(red: 76.0/255.0, green: 9.0/255.0, blue: 80.0/255.0, alpha: 1.0)
+    static var backgroundGray = UIColor(red: 80.0/255.0, green: 102.0/255.0, blue: 191.0/255.0, alpha: 1.0)
+    static var lightPurple = UIColor(red: 119.0/255.0, green: 12.0/255.0, blue: 128.0/255.0, alpha: 1.0)
+    static var lightLightGray = UIColor(red: 170.0/255.0, green: 181.0/255.0, blue: 232.0/255.0, alpha: 1.0)
+    
+    static var replaceLightgray = UIColor(red: 128.0/255.0, green: 116.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     
     static func typerighterFont(with textStyle: UIFont.TextStyle, pointSize: CGFloat) -> UIFont {
         
