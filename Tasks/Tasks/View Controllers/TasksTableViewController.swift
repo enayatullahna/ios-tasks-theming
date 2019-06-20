@@ -12,7 +12,9 @@ import CoreData
 class TasksTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
     // MARK: Properties
-    
+    override func viewDidLoad() {
+        self.setupApperances()
+    }
     private let taskController = TaskController()
     
     // MARK: - Table view data source
@@ -27,7 +29,34 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
         let task = taskController.tasks[indexPath.row]
         cell.textLabel?.text = task.name
         
+        cell.detailTextLabel?.text = task.notes
+        self.style(cell: cell)
+        
+        
         return cell
+    }
+    
+    private func style(cell: UITableViewCell) {
+        
+        cell.textLabel?.font = ApperanceHelper.typerighterFont(with: .caption1, pointSize: 25)
+        cell.detailTextLabel?.font = ApperanceHelper.typerighterFont(with: .caption2, pointSize: 20)
+        
+        cell.textLabel?.backgroundColor = .clear
+        cell.detailTextLabel?.backgroundColor = .clear
+        
+        cell.textLabel?.textColor = ApperanceHelper.midPurple
+        cell.textLabel?.textColor = ApperanceHelper.midPurple
+        
+        cell.backgroundColor = ApperanceHelper.replaceLightgray
+    
+    }
+    
+    private func setupApperances() {
+        self.view.backgroundColor = ApperanceHelper.replaceLightgray
+        self.tableView.backgroundColor = ApperanceHelper.lightLightGray
+        self.tableView.tableHeaderView?.backgroundColor = ApperanceHelper.replaceLightgray
+        
+    
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {

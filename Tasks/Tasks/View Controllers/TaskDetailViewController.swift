@@ -14,6 +14,7 @@ class TaskDetailViewController: UIViewController {
         super.viewDidLoad()
 
         updateViews()
+        self.setupAppearances()
     }
 
     @IBAction func save(_ sender: Any) {
@@ -33,6 +34,36 @@ class TaskDetailViewController: UIViewController {
         }
 
         navigationController?.popViewController(animated: true)
+    }
+    
+    private func setupAppearances() {
+        
+        self.nameTextField.backgroundColor = ApperanceHelper.replaceLightgray
+        self.nameTextField.textColor = ApperanceHelper.midPurple
+        
+        self.notesTextView.backgroundColor = ApperanceHelper.replaceLightgray
+        self.notesTextView.textColor = ApperanceHelper.midPurple
+        self.notesTextView.layer.borderColor = UIColor.white.cgColor
+        self.notesTextView.layer.borderWidth = 0.5
+        self.notesTextView.layer.cornerRadius = 8.0
+        self.notesTextView.font = ApperanceHelper.typerighterFont(with: .body, pointSize: 28)
+        
+        self.notesTextView.keyboardAppearance = .dark
+        
+        self.view.backgroundColor = ApperanceHelper.lightLightGray
+        
+        self.priorityControl.backgroundColor = ApperanceHelper.lightLightGray
+        
+        self.nameLabel.textColor = ApperanceHelper.midPurple
+        self.nameLabel.font = ApperanceHelper.typerighterFont(with: .body, pointSize: 22)
+        
+        self.priorityLabel.textColor = ApperanceHelper.midPurple
+        self.priorityLabel.font = ApperanceHelper.typerighterFont(with: .body, pointSize: 22)
+        
+        self.notesLabel.textColor = ApperanceHelper.midPurple
+        self.notesLabel.font = ApperanceHelper.typerighterFont(with: .body, pointSize: 22)
+        
+        
     }
     
     private func updateViews() {
@@ -60,6 +91,11 @@ class TaskDetailViewController: UIViewController {
     
     var taskController: TaskController!
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var priorityLabel: UILabel!
+    @IBOutlet weak var notesLabel: UILabel!
+    
+    
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var priorityControl: UISegmentedControl!
     @IBOutlet var notesTextView: UITextView!

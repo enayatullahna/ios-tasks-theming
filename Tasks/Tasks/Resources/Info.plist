@@ -6,6 +6,9 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>zekton.ttf</string>
+		<string>doves.ttf</string>
+		<string>HOMOARAK.TTF</string>
 		<string>Architex.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
