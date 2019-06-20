@@ -18,6 +18,8 @@
 		9D70DFF921248F8E006D4DF5 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70DFF821248F8E006D4DF5 /* TaskController.swift */; };
 		E6966D8E22BB1C9D00C61D71 /* ApperanceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6966D8D22BB1C9D00C61D71 /* ApperanceHelper.swift */; };
 		E6966D9022BB29A800C61D71 /* HOMOARAK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E6966D8F22BB29A800C61D71 /* HOMOARAK.TTF */; };
+		E6966D9222BB2B0E00C61D71 /* doves.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6966D9122BB2B0E00C61D71 /* doves.ttf */; };
+		E6966D9422BB2BA700C61D71 /* zekton.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6966D9322BB2BA700C61D71 /* zekton.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		9D70DFF821248F8E006D4DF5 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 		E6966D8D22BB1C9D00C61D71 /* ApperanceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApperanceHelper.swift; sourceTree = "<group>"; };
 		E6966D8F22BB29A800C61D71 /* HOMOARAK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = HOMOARAK.TTF; sourceTree = "<group>"; };
+		E6966D9122BB2B0E00C61D71 /* doves.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = doves.ttf; sourceTree = "<group>"; };
+		E6966D9322BB2BA700C61D71 /* zekton.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = zekton.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				9D4408CD211FF434005E2116 /* Assets.xcassets */,
 				9D4408CF211FF434005E2116 /* LaunchScreen.storyboard */,
 				9D4408D2211FF434005E2116 /* Info.plist */,
+				E6966D9122BB2B0E00C61D71 /* doves.ttf */,
+				E6966D9322BB2BA700C61D71 /* zekton.ttf */,
 				E6966D8F22BB29A800C61D71 /* HOMOARAK.TTF */,
 				46179D3B229D8257009CE2C4 /* Architex.ttf */,
 			);
@@ -183,8 +189,10 @@
 			files = (
 				46179D3C229D8257009CE2C4 /* Architex.ttf in Resources */,
 				9D4408D1211FF434005E2116 /* LaunchScreen.storyboard in Resources */,
+				E6966D9422BB2BA700C61D71 /* zekton.ttf in Resources */,
 				E6966D9022BB29A800C61D71 /* HOMOARAK.TTF in Resources */,
 				9D4408CE211FF434005E2116 /* Assets.xcassets in Resources */,
+				E6966D9222BB2B0E00C61D71 /* doves.ttf in Resources */,
 				9D4408CC211FF431005E2116 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

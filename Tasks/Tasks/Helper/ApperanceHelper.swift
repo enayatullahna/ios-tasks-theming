@@ -13,10 +13,11 @@ enum ApperanceHelper {
     static var midPurple = UIColor(red: 154.0/255.0, green: 120.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     static var backgroundGray = UIColor(red: 77.0/255.0, green: 77.0/255.0, blue: 77.0/255.0, alpha: 1.0)
     static var lightPurple = UIColor(red: 202.0/255.0, green: 172.0/255.0, blue: 249.0/255.0, alpha: 1.0)
+    static var lightLightGray = UIColor(red: 191.0/255.0, green: 191.0/255.0, blue: 191.0/255.0, alpha: 1.0)
     
     static func typerighterFont(with textStyle: UIFont.TextStyle, pointSize: CGFloat) -> UIFont {
         
-        let font = UIFont(name: "Zapfino", size: pointSize)!
+        let font = UIFont(name: "Zekton", size: pointSize)!
         return UIFontMetrics(forTextStyle: textStyle).scaledFont(for: font)
         
     }
@@ -44,7 +45,6 @@ enum ApperanceHelper {
         button.titleLabel?.font = typerighterFont(with: .callout, pointSize: 30)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = self.midPurple
-//        button.layer.cornerRadius = 6
         
     }
 }

@@ -14,6 +14,7 @@ class TaskDetailViewController: UIViewController {
         super.viewDidLoad()
 
         updateViews()
+        self.setupAppearances()
     }
 
     @IBAction func save(_ sender: Any) {
@@ -33,6 +34,26 @@ class TaskDetailViewController: UIViewController {
         }
 
         navigationController?.popViewController(animated: true)
+    }
+    
+    private func setupAppearances() {
+        
+        self.nameTextField.backgroundColor = .lightGray
+        self.nameTextField.textColor = ApperanceHelper.midPurple
+        
+        self.notesTextView.backgroundColor = .lightGray
+        self.notesTextView.textColor = ApperanceHelper.midPurple
+        self.notesTextView.layer.borderColor = UIColor.white.cgColor
+        self.notesTextView.layer.borderWidth = 0.5
+        self.notesTextView.layer.cornerRadius = 8.0
+        self.notesTextView.font = ApperanceHelper.typerighterFont(with: .body, pointSize: 28)
+        
+        self.notesTextView.keyboardAppearance = .dark
+        
+        self.view.backgroundColor = ApperanceHelper.lightLightGray
+        
+        self.priorityControl.backgroundColor = ApperanceHelper.lightLightGray
+        
     }
     
     private func updateViews() {

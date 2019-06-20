@@ -77,16 +77,16 @@
                                 <rect key="frame" x="16" y="136" width="343" height="511"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qRz-8F-sRH">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="31.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ee-Sa-gkn">
-                                                <rect key="frame" x="0.0" y="0.0" width="69" height="31.5"/>
-                                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.75011430650940569" green="0.75011430650940569" blue="0.75011430650940569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="highlightedColor" red="0.31213093573072431" green="0.40076591671215578" blue="0.75011430650940569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QoX-Lu-hGg">
-                                                <rect key="frame" x="77" y="0.0" width="266" height="31.5"/>
+                                                <rect key="frame" x="58" y="0.0" width="285" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -94,16 +94,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cHw-oX-ol2">
-                                        <rect key="frame" x="0.0" y="39.5" width="343" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="38" width="343" height="28"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Priority:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuc-2H-ovn">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="28"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UUk-vn-i5S">
-                                                <rect key="frame" x="88" y="0.0" width="255" height="27.5"/>
+                                                <rect key="frame" x="88" y="0.0" width="255" height="29"/>
                                                 <segments>
                                                     <segment title="Low"/>
                                                     <segment title="Medium"/>

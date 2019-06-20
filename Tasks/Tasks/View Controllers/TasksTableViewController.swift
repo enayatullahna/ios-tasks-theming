@@ -53,12 +53,9 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
     
     private func setupApperances() {
         self.view.backgroundColor = .lightGray
-        self.tableView.backgroundColor = .lightGray
+        self.tableView.backgroundColor = ApperanceHelper.lightLightGray
         self.tableView.tableHeaderView?.backgroundColor = .lightGray
-        
-//        ApperanceHelper.style(button: newMessageButton)
-//        newMessageButton.layer.cornerRadius = newMessageButton.frame.width / 2
-//        newMessageButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+    
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
